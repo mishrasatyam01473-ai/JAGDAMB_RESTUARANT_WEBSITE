@@ -1,0 +1,17 @@
+{
+  "short_name": "जगदंब ज्युस बार",
+  "name": "जयवर्धन जगदंब ज्युस बार - JAGDAMB JUICE BAR",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#fffbf5",
+  "theme_color": "#e65100",
+  "display": "standalone",
+  "orientation": "portrait"
+}
+

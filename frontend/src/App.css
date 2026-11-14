@@ -1,0 +1,576 @@
+/* ========================================================
+   JAGDAMB JUICE BAR - Powered By BROTOCOL
+   Theme: Fresh Juices, Warm Citrus Orange, Crimson & Coconut Green
+   GPU-Accelerated • 120Hz Mobile Performance • Zero Overhead
+   ======================================================== */
+
+/* Root Atmosphere */
+.website-root {
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  background-color: #fffbf5;
+  background-image:
+    radial-gradient(ellipse 420px 240px at 50% 8%, rgba(255, 120, 20, 0.12), transparent 70%),
+    radial-gradient(circle 140px at 85% 20%, rgba(255, 184, 0, 0.10), transparent 70%),
+    radial-gradient(circle 120px at 15% 15%, rgba(34, 197, 94, 0.08), transparent 70%),
+    linear-gradient(180deg, #fffdfa 0%, #fff6ec 55%, #ffefe0 100%);
+  overflow-x: hidden;
+}
+
+/* Corner Ribbon */
+.website-root::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 160px;
+  background: radial-gradient(circle at 0 0, #ff4500 0%, #ff6600 35%, #ffa000 65%, transparent 75%);
+  border-bottom-right-radius: 120px;
+  opacity: 0.88;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ambient Lighting Glows (Hardware Accelerated) */
+.ambient-backdrop {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+  contain: strict;
+}
+
+.ambient-glow {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  will-change: transform;
+}
+
+.ambient-glow.top-orange-glow {
+  top: -40px;
+  width: 440px;
+  height: 280px;
+  background: radial-gradient(ellipse, rgba(255, 102, 0, 0.14) 0%, transparent 70%);
+}
+
+.ambient-glow.mid-tropical-glow {
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 460px;
+  height: 460px;
+  background: radial-gradient(ellipse, rgba(34, 197, 94, 0.06) 0%, transparent 70%);
+}
+
+.ambient-glow.bottom-glow {
+  bottom: -40px;
+  width: 400px;
+  height: 180px;
+  background: radial-gradient(ellipse, rgba(255, 122, 0, 0.08) 0%, transparent 70%);
+}
+
+/* Content Container */
+.landing-wrapper {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 440px;
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 30px 20px 24px;
+  box-sizing: border-box;
+}
+
+.landing-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ========================================================
+   BRAND HEADER & EMBLEM CARD
+   ======================================================== */
+.brand-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 4px 0 24px;
+}
+
+.brand-emblem-card {
+  width: 100%;
+  background: #ffffff;
+  border: 2px solid rgba(255, 115, 0, 0.35);
+  border-radius: 26px;
+  padding: 18px 16px 16px;
+  box-shadow: 
+    0 12px 32px rgba(255, 102, 0, 0.12),
+    0 2px 8px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  contain: layout paint;
+}
+
+.brand-emblem-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 80px;
+  background: radial-gradient(circle at 0 0, rgba(255, 85, 0, 0.85) 0%, rgba(255, 153, 0, 0.6) 50%, transparent 70%);
+  border-bottom-right-radius: 60px;
+  pointer-events: none;
+}
+
+/* Official Branch 37 Vasai Badge Seal */
+.branch-badge-seal {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #e53935 0%, #b71c1c 100%);
+  border: 1.5px dashed #ffffff;
+  box-shadow: 0 3px 8px rgba(183, 28, 28, 0.35);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  line-height: 1.05;
+  z-index: 3;
+}
+
+.branch-seal-text {
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+}
+
+.branch-seal-num {
+  font-size: 13px;
+  font-weight: 900;
+  font-family: var(--font-system);
+}
+
+.branch-seal-city {
+  font-size: 7.5px;
+  font-weight: 700;
+}
+
+.coconuts-vector-wrap {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 4px 10px rgba(34, 197, 94, 0.25));
+  transition: transform 0.25s ease;
+  will-change: transform;
+}
+
+.coconuts-vector-wrap:hover {
+  transform: scale(1.05);
+}
+
+/* Typography Banner */
+.brand-title-banner {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 8px;
+  margin: 4px 0 2px;
+}
+
+.brand-prefix-red,
+.brand-suffix-red {
+  font-size: 19px;
+  font-weight: 800;
+  color: #dc2626;
+  letter-spacing: -0.2px;
+  text-shadow: 0 1px 2px rgba(220, 38, 38, 0.15);
+}
+
+.brand-main-devanagari {
+  font-family: var(--font-system);
+  font-size: 38px;
+  font-weight: 900;
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  background: linear-gradient(180deg, #ff7700 0%, #ff4500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  filter: drop-shadow(0 2px 4px rgba(255, 69, 0, 0.25));
+}
+
+.brand-title-english {
+  font-family: var(--font-system);
+  font-size: 13.5px;
+  font-weight: 800;
+  letter-spacing: 2.4px;
+  color: #854d0e;
+  text-transform: uppercase;
+  margin: 2px 0 8px;
+}
+
+/* Diamond Divider: ——— ◆ ——— */
+.brand-diamond-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 85%;
+  margin: 4px auto 6px;
+}
+
+.divider-line {
+  flex: 1;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ff7700, transparent);
+  border-radius: 2px;
+}
+
+.divider-diamond {
+  font-size: 12px;
+  color: #ff6600;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-tagline-script {
+  font-size: 16px;
+  font-weight: 700;
+  color: #d95b00;
+  letter-spacing: 0.6px;
+  font-style: italic;
+  margin: 0;
+}
+
+/* ========================================================
+   WELCOME GREETING
+   ======================================================== */
+.welcome-section {
+  text-align: center;
+  margin-bottom: 22px;
+}
+
+.welcome-title {
+  font-family: var(--font-system);
+  font-size: 27px;
+  font-weight: 800;
+  color: #1f1106;
+  margin-bottom: 4px;
+  letter-spacing: -0.3px;
+}
+
+.welcome-subtitle {
+  font-size: 15px;
+  font-weight: 500;
+  color: #665345;
+  letter-spacing: -0.1px;
+}
+
+/* ========================================================
+   ACTION NAVIGATION (Menu, Review Us, Social Media)
+   ======================================================== */
+.actions-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: auto;
+}
+
+.action-card {
+  width: 100%;
+  height: 68px;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0 22px 0 20px;
+  box-sizing: border-box;
+  text-decoration: none;
+  position: relative;
+  transition: transform 0.18s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.18s ease;
+  cursor: pointer;
+  border: none;
+  will-change: transform;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+}
+
+.action-card:active {
+  transform: translateY(1px);
+}
+
+/* 1. Menu Button - Mango Orange */
+.btn-menu {
+  background: linear-gradient(135deg, #ffaa00 0%, #ff6600 100%);
+  box-shadow: 0 8px 24px rgba(255, 102, 0, 0.32);
+}
+
+.btn-menu:hover {
+  box-shadow: 0 12px 28px rgba(255, 102, 0, 0.45);
+}
+
+.btn-menu .card-label {
+  color: #141416;
+}
+
+/* 2. Review Us Button - Strawberry Crimson */
+.btn-review {
+  background: linear-gradient(135deg, #f43f5e 0%, #dc2626 100%);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.32);
+}
+
+.btn-review:hover {
+  box-shadow: 0 12px 28px rgba(220, 38, 38, 0.45);
+}
+
+.btn-review .card-label {
+  color: #ffffff;
+}
+
+/* 3. Social Media Button - Coconut Palm Green */
+.btn-social {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.32);
+}
+
+.btn-social:hover {
+  box-shadow: 0 12px 28px rgba(16, 185, 129, 0.45);
+}
+
+.btn-social .card-label {
+  color: #ffffff;
+}
+
+.card-left-icon-container {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 14px;
+}
+
+.card-label {
+  font-family: var(--font-system);
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  flex: 1;
+  text-align: left;
+}
+
+/* ========================================================
+   FOOTER BRANDING (Static Badge)
+   ======================================================== */
+.footer-section {
+  margin-top: 36px;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.brotocol-footer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: #553e2e;
+  padding: 8px 18px;
+  border-radius: 999px;
+  background: #ffffff;
+  border: 1px solid rgba(255, 102, 0, 0.3);
+  box-shadow: 0 4px 14px rgba(255, 102, 0, 0.12);
+  user-select: none;
+}
+
+.brotocol-name {
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #ff5500;
+}
+
+/* ========================================================
+   MOBILE MENU VIEWER (Fit to Screen, Borderless, Theme Background)
+   ======================================================== */
+.mobile-menu-viewer-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background-color: #fffbf5;
+  background-image:
+    radial-gradient(ellipse 460px 280px at 50% 0%, rgba(255, 102, 0, 0.16), transparent 75%),
+    radial-gradient(circle 240px at 85% 85%, rgba(255, 170, 0, 0.12), transparent 70%),
+    radial-gradient(circle 200px at 15% 90%, rgba(34, 197, 94, 0.08), transparent 70%),
+    linear-gradient(180deg, #fffdfa 0%, #fff6ec 50%, #ffefe0 100%);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: fadeIn 0.18s ease-out;
+  transform: translateZ(0);
+  will-change: opacity;
+}
+
+/* Pinned Top Close Button */
+.mobile-menu-top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2147483647;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  padding-top: max(12px, env(safe-area-inset-top));
+  pointer-events: none;
+  transform: translateZ(0);
+}
+
+.mobile-menu-close-btn {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 42px;
+  padding: 0 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #ff5500 0%, #dc2626 100%);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  font-family: var(--font-system);
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 
+    0 6px 20px rgba(220, 38, 38, 0.45),
+    0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, background 0.16s ease;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.mobile-menu-close-btn:hover {
+  background: linear-gradient(135deg, #ff6600 0%, #b91c1c 100%);
+  transform: translateY(-1px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(220, 38, 38, 0.55);
+}
+
+.mobile-menu-close-btn:active {
+  transform: translateY(1px) scale(0.97);
+}
+
+.close-btn-text {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Scrollable Canvas */
+.mobile-menu-scroll-canvas {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x pan-y pinch-zoom;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Centered Image Container */
+.mobile-menu-image-container {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 58px 0 24px;
+  box-sizing: border-box;
+}
+
+/* Fit to Screen & Borderless Menu Image */
+.mobile-menu-full-image {
+  margin: auto 0;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  touch-action: pan-x pan-y pinch-zoom;
+  cursor: zoom-in;
+  user-select: none;
+  -webkit-user-select: none;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  outline: none !important;
+  transition: max-width 0.22s ease-out;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.mobile-menu-full-image.zoomed-fit {
+  max-width: 1400px !important;
+  width: 220% !important;
+  cursor: zoom-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* ========================================================
+   RESPONSIVE MEDIA QUERIES
+   ======================================================== */
+@media (max-width: 640px) {
+  .mobile-menu-full-image:not(.zoomed-fit) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-wrapper {
+    padding: 20px 16px 18px;
+  }
+
+  .brand-main-devanagari {
+    font-size: 32px;
+  }
+
+  .brand-prefix-red,
+  .brand-suffix-red {
+    font-size: 17px;
+  }
+
+  .action-card {
+    height: 64px;
+  }
+}

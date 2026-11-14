@@ -1,0 +1,14 @@
+{
+  "name": "jagdamb-juice-bar-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "जयवर्धन जगदंब ज्युस बार (JAGDAMB JUICE BAR) - Official Website",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "lint": "npm run lint --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
+    "start": "npm run preview --prefix frontend"
+  }
+}
+
