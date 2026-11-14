@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "private": true,
   "description": "जयवर्धन जगदंब ज्युस बार (JAGDAMB JUICE BAR) - Official Website",
+  "workspaces": [
+    "frontend"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "dev": "npm run dev --prefix frontend",
     "build": "npm run build --prefix frontend",
