@@ -1,8 +1,9 @@
 # JAGDAMB JUICE BAR — Official Landing Website
 
-A minimal, high-performance, and self-contained mobile landing website for **जयवर्धन जगदंब ज्युस बार (JAGDAMB JUICE BAR)** — *“Fresh Juices... Healthy Life...”* (शाखा क्र. ३७, वसई).
+A minimal, high-performance, and self-contained mobile landing website for **जयवर्धन जगदंब ज्युस बार (JAGDAMB JUICE BAR)** — *“Fresh Juices... Healthy Life...”*.
 
 ## Architecture Highlights
+- **Official Brand Typography & Graphic Logo**: High-fidelity, transparent vector/raster emblem with responsive WebP picture support.
 - **Zero External Dependencies**: Pure SVG icons, zero Google Fonts, zero external CDNs, completely offline-ready.
 - **Minimal Codebase**: 5 concise components, 1 clean centralized data file, and a single organized CSS file.
 - **Mobile Menu Viewer**:
@@ -24,6 +25,6 @@ npm run dev
 # Run Oxlint (0 warnings, 0 errors)
 npm run lint
 
-# Production build (~9 kB CSS, ~232 kB JS)
+# Production build (~8.3 kB CSS, ~228 kB JS)
 npm run build
 ```
