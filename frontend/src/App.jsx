@@ -34,7 +34,6 @@ function App() {
           <BrandHeader
             name={restaurantData.name}
             tagline={restaurantData.tagline}
-            branch={restaurantData.branch}
             logoImage={restaurantData.logoImage}
           />
 

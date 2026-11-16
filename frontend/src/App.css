@@ -126,55 +126,6 @@
   contain: layout paint;
 }
 
-.brand-emblem-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90px;
-  height: 80px;
-  background: radial-gradient(circle at 0 0, rgba(255, 85, 0, 0.85) 0%, rgba(255, 153, 0, 0.6) 50%, transparent 70%);
-  border-bottom-right-radius: 60px;
-  pointer-events: none;
-}
-
-/* Official Branch 37 Vasai Badge Seal */
-.branch-badge-seal {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  background: radial-gradient(circle, #e53935 0%, #b71c1c 100%);
-  border: 1.5px dashed #ffffff;
-  box-shadow: 0 3px 8px rgba(183, 28, 28, 0.35);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  line-height: 1.05;
-  z-index: 3;
-}
-
-.branch-seal-text {
-  font-size: 7px;
-  font-weight: 700;
-  letter-spacing: -0.2px;
-}
-
-.branch-seal-num {
-  font-size: 13px;
-  font-weight: 900;
-  font-family: var(--font-system);
-}
-
-.branch-seal-city {
-  font-size: 7.5px;
-  font-weight: 700;
-}
-
 /* Official Brand Graphic Logo */
 .brand-logo-wrap {
   width: 100%;

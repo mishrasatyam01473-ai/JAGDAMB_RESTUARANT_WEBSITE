@@ -2,19 +2,11 @@ import React, { memo } from 'react';
 
 /**
  * BrandHeader Component (Memoized for Zero-Overhead Re-renders)
- * Features official store typography & artwork logo with branch seal.
+ * Features official store typography & artwork logo.
  */
-export const BrandHeader = memo(({ name, tagline, branch, logoImage = '/logo.png' }) => (
+export const BrandHeader = memo(({ name, tagline, logoImage = '/logo.png' }) => (
   <header className="brand-header">
     <div className="brand-emblem-card">
-      {branch && (
-        <div className="branch-badge-seal" aria-label={branch} title={branch}>
-          <span className="branch-seal-text">शाखा क्र.</span>
-          <span className="branch-seal-num">३७</span>
-          <span className="branch-seal-city">वसई</span>
-        </div>
-      )}
-
       {/* Official Brand Logo */}
       <div className="brand-logo-wrap">
         <picture>

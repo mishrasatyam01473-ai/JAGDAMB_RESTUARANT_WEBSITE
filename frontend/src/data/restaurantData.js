@@ -1,7 +1,6 @@
 export const restaurantData = {
   name: "JAGDAMB JUICE BAR",
   tagline: "Fresh Juices... Healthy Life...",
-  branch: "शाखा क्र. 37 वसई",
   welcomeTitle: "Welcome!",
   welcomeSubtitle: "What would you like to explore?",
   logoImage: "/logo.png",
