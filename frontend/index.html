@@ -12,11 +12,12 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="जयवर्धन जगदंब ज्युस बार (JAGDAMB JUICE BAR) - शाखा क्र. ३७, वसई" />
     <meta property="og:description" content="Fresh Juices... Healthy Life... Official store menu, fresh fruit juices & specials at Vasai Branch 37." />
-    <meta property="og:image" content="/favicon.svg" />
+    <meta property="og:image" content="/logo.png" />
     <meta property="og:site_name" content="JAGDAMB JUICE BAR" />
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="जयवर्धन जगदंब ज्युस बार | Fresh Juices... Healthy Life..." />
     <meta name="twitter:description" content="Official digital landing page of Jagdamb Juice Bar, Branch 37 Vasai." />
+    <meta name="twitter:image" content="/logo.png" />
 
     <!-- PWA & Mobile Web App Meta -->
     <link rel="manifest" href="/manifest.json" />
@@ -29,11 +30,15 @@
     <link rel="dns-prefetch" href="https://search.google.com" />
     <link rel="dns-prefetch" href="https://www.instagram.com" />
 
+    <!-- Preload Brand Logo for Instant Paint -->
+    <link rel="preload" as="image" href="/logo.webp" type="image/webp" fetchpriority="high" />
+
     <!-- Pre-warm Menu Card Image in Background Cache -->
     <link rel="preload" as="image" href="/menu-page.jpg" fetchpriority="low" />
 
+    <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="apple-touch-icon" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/logo.png" />
 
     <!-- Critical Inline Styles for Sub-Millisecond First Contentful Paint -->
     <style>

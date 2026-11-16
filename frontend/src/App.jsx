@@ -35,6 +35,7 @@ function App() {
             name={restaurantData.name}
             tagline={restaurantData.tagline}
             branch={restaurantData.branch}
+            logoImage={restaurantData.logoImage}
           />
 
           {/* Welcome Greeting */}
