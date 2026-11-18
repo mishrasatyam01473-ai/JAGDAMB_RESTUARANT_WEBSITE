@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#e65100" />
+    <meta name="description" content="जयवर्धन जगदंब ज्युस बार (JAGDAMB JUICE BAR) - Fresh Juices... Healthy Life..." />
+    <title>जयवर्धन जगदंब ज्युस बार | Fresh Juices... Healthy Life...</title>
+
+    <!-- Social Sharing & Open Graph (WhatsApp, Instagram, Facebook preview cards) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="जयवर्धन जगदंब ज्युस बार (JAGDAMB JUICE BAR)" />
+    <meta property="og:description" content="Fresh Juices... Healthy Life... Official store menu, fresh fruit juices & specials." />
+    <meta property="og:image" content="/logo.png" />
+    <meta property="og:site_name" content="JAGDAMB JUICE BAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="जयवर्धन जगदंब ज्युस बार | Fresh Juices... Healthy Life..." />
+    <meta name="twitter:description" content="Official digital landing page of Jagdamb Juice Bar." />
+    <meta name="twitter:image" content="/logo.png" />
+
+    <!-- PWA & Mobile Web App Meta -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="जगदंब ज्युस बार" />
+
+    <!-- DNS Prefetch for Instant External Transitions -->
+    <link rel="dns-prefetch" href="https://search.google.com" />
+    <link rel="dns-prefetch" href="https://www.instagram.com" />
+
+    <!-- Preload Brand Logo for Instant Paint -->
+    <link rel="preload" as="image" href="/logo.webp" type="image/webp" fetchpriority="high" />
+
+    <!-- Pre-warm Menu Card Image in Background Cache -->
+    <link rel="preload" as="image" href="/menu-page.jpg" fetchpriority="low" />
+
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/logo.png" />
+
+    <!-- Critical Inline Styles for Sub-Millisecond First Contentful Paint -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        background-color: #fffbf5;
+        min-height: 100%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        -webkit-tap-highlight-color: transparent;
+      }
+      #root {
+        min-height: 100vh;
+        min-height: 100svh;
+        display: flex;
+        justify-content: center;
+        background-color: #fffbf5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
